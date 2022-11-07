@@ -61,13 +61,13 @@ async function addEmployee(selectedRole) {
   
 
   // Employee prompts
-  // Validates inputs for name (alpha-only), id (numeric-only), email and the roleSpecific as alphanumeric 
+  // Validates inputs for name (alpha-only), id (numeric-only), email and the roleSpecific as alphanumeric + spaces
   await inquirer
     .prompt([
       { type: "input", message: genericQuestions[0], name: "name", validate: function(name) { return /^[a-zA-Z]+$/.test(name) }},
       { type: "input", message: genericQuestions[1], name: "id", validate: function(id) { return /^[0-9]+$/.test(id)}},
       { type: "input", message: genericQuestions[2], name: "email", validate: function(email) { return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email) }},
-      { type: "input", message: roleSpecific[roleIndex], name: "specific", validate: function(specific) { return /^[a-zA-Z0-9]+$/.test(specific) }},
+      { type: "input", message: roleSpecific[roleIndex], name: "specific", validate: function(specific) { return /^[a-zA-Z0-9 ]+$/.test(specific) }},
       {
         type: "list",
         message: genericQuestions[3],
