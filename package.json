@@ -1,0 +1,23 @@
+{
+  "name": "10---team-profile-generator",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000e\u0000a\u0000m\u0000-\u0000P\u0000r\u0000o\u0000f\u0000i\u0000l\u0000e\u0000-\u0000G\u0000e\u0000n\u0000e\u0000r\u0000a\u0000t\u0000o\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanGodfrey/Team-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanGodfrey/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/DylanGodfrey/Team-Profile-Generator#readme"
+}
